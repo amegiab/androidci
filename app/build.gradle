@@ -90,7 +90,7 @@ robolectric {
     exclude '**/espresso/**/*.class'
 
     // Configure max heap size of the test JVM
-    maxHeapSize = '2048m'
+    maxHeapSize = '1024m'
 
     // Configure the test JVM arguments - Does not apply to Java 8
     jvmArgs '-XX:MaxPermSize=512m', '-XX:-UseSplitVerifier'
