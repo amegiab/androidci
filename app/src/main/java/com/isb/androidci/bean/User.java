@@ -1,5 +1,6 @@
 package com.isb.androidci.bean;
 
+// Bean de prueba test
 public class User {
     private String _name;
 
