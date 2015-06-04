@@ -10,6 +10,10 @@ android {
         targetCompatibility JavaVersion.VERSION_1_7
     }
 
+    lintOptions {
+        abortOnError false
+    }
+
     defaultConfig {
         applicationId "com.isb.androidci"
         minSdkVersion 15
@@ -95,7 +99,7 @@ robolectric {
     exclude '**/espresso/**/*.class'
 
     // Configure max heap size of the test JVM
-    maxHeapSize = '1024m'
+    maxHeapSize = '512m'
 
     // Configure the test JVM arguments - Does not apply to Java 8
     jvmArgs '-XX:MaxPermSize=512m', '-XX:-UseSplitVerifier'
